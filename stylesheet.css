@@ -1,0 +1,370 @@
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Sacramento', cursive;*/
+
+/*reset padding and margin for all objects at the start of your style
+after that you can set padding and margin as you want for each object*/
+* {
+    margin:0;
+    padding:0;
+    }
+
+
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ED9AC2;
+    position:fixed;
+    top:0;
+    width:100%;
+    
+    
+  }
+
+
+  li{
+    float:left;
+}
+
+  
+
+  li a{
+    display:block;
+     color:white;
+    /*text-align:center;*/
+    padding:1rem 2rem;
+    display:block;
+    padding:1rem 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;;
+    font-weight: bold;
+    text-decoration: none;
+  } 
+ 
+
+  li a:hover{
+    background-color:#F4B1D1;
+    color:white;
+    font-size: 1.1rem;
+    
+  }
+
+ @media(max-width:800px){
+    ul {float:none;
+    }
+ }
+
+ /*************************************************/
+ body{ 
+    margin:0;
+ }
+
+
+ #home >div{
+    background:url(./image/Hero-background.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:0px 0px;  
+ }
+
+ h1{
+    display:flex;
+    flex-direction: column; 
+    align-items:center;
+    font-size: 10rem;
+    font-family: 'Sacramento', cursive;
+    color:white;
+    margin:0;
+    padding:13rem 8rem 0 8rem;
+    
+ }
+
+    .heroh3{
+        display:flex;
+        flex-direction: column; 
+        align-items:center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        color:darkgoldenrod;
+        padding:3rem 3rem 5rem 3rem;
+        letter-spacing: 0.2rem;
+        
+    }
+
+    @media(max-width:1200px){
+        h1{
+            font-size:7rem;
+            text-align: center;
+        }
+        .heroh3{
+            font-size:1rem;
+            
+        }
+    }
+    /********************************************************************/
+
+.about{
+    
+    display:grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color:#FFF8CB ;
+    margin:0;
+    padding-top: 4rem;
+    padding-bottom: 5rem; 
+
+}
+
+.about>h2{
+    display:flex;
+    justify-content: center;
+    font-size: 5rem;
+    color:#F47CB9;
+    
+
+}
+
+.about>p{
+    padding-left: 11rem;
+    
+    width:500px;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;;
+}
+
+.about>img{    
+    grid-row-start: span 2;
+    width:250px;
+ 
+}
+
+@media(max-width:1200px){
+    .about{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        
+    }
+    .about>p{
+        padding-left:0;
+        margin-top:1rem;
+        width:350px;
+    }
+}
+/*****************************************************************/
+.whatido {
+    display:grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
+    margin:0;
+    padding-top: 6rem;
+    padding-bottom: 3rem; 
+    
+}
+
+.whatido>h2{
+    display:flex;
+    justify-content: center;
+    font-size: 5rem;
+    color:#F47CB9;
+}
+
+
+.whatido-ul {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    line-height:1.6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4{
+    color:#F47CB9;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+
+hr{
+    border: dotted pink 6px;
+    border-bottom: none;
+    width: 40%;
+    margin: 50px;
+    
+}
+
+@media(max-width:1200px)
+{ .whatido{
+            display:flex;
+            flex-direction: column;
+            
+            align-items: center; 
+            
+        }
+
+    .whatido-ul{
+        display:flex;
+        flex-direction:column;
+        
+        padding-top: 3rem;
+        margin:0;
+    }
+}
+    
+/***************************************************/
+
+
+
+.showcase {
+    background: linear-gradient(300deg, #f4e47e, #bf6dfa, #e48578);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    padding-bottom:5rem;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+.showcase>h2{
+    color:white;
+    display:flex;
+    justify-content: center;
+    font-size: 5rem;
+    padding:5rem 0 2rem 0;
+}
+
+.work{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.work img{
+    width:300px;
+    height:180px;
+    border:6px dotted white;
+    padding:0.5rem;
+   
+}
+
+.work-item{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.work h3{
+    color:white;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding:1rem;
+    text-decoration: underline;
+}
+
+.work p{
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    font-weight: bold;
+    font-size:1rem;
+    width:350px;
+    letter-spacing: 2px;
+    padding-left: 1.2rem;
+}
+
+@media(max-width:1200px){
+   div.work{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .work-item img{
+    width:500px;
+    height:300px;
+   }
+
+   .work-item h3{
+    font-size: 2rem;
+    margin-bottom: 0;
+   }
+
+   .work-item p{
+    margin: 0 0 2rem 0;
+    font-size: 1.3rem;
+   }
+}
+
+/****************************************************************/
+
+
+
+.contact-top{
+    margin-top:0.1rem;
+    background-image: url(./image/Hero-background-contactcard.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:0px 0px;  
+    display:flex;
+    flex-direction: column;
+}
+
+    #contact h2 {
+        padding:8rem 0 0 10rem;
+        color:white;
+        
+        font-size: 5rem;
+    }
+
+    .contact-top p{
+        padding:0.5rem 0 3rem 10rem;
+        color:white;
+        font-size: 1.2rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+    }
+
+    .contact-buttom {
+        background-color: rgb(255, 214, 221);
+    }
+
+    .contact-buttom > h3{
+        padding:3rem 0 0 10rem;
+        color:#F47CB9;
+        font-size: 2rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    p#p{
+        color:#F47CB9;
+        padding:2rem 0 3rem 10rem;
+        font-size: 1.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+
+    footer{
+        padding:0.5rem 0 0.5rem 0;
+        display:flex;
+        justify-content: center;
+        background-color: #ED9AC2;
+        color:white;
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
